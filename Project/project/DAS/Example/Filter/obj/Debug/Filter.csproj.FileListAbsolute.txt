@@ -85,3 +85,4 @@ E:\zz\github\cc_project\Project\project\DAS\Example\Filter\bin\zh-Hans\Microsoft
 E:\zz\github\cc_project\Project\project\DAS\Example\Filter\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 E:\zz\github\cc_project\Project\project\DAS\Example\Filter\obj\Debug\Filter.dll
 E:\zz\github\cc_project\Project\project\DAS\Example\Filter\obj\Debug\Filter.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Filter\obj\Debug\Filter.csprojResolveAssemblyReference.cache

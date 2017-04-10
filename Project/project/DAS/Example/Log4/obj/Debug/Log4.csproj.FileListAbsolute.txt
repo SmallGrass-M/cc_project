@@ -6,3 +6,4 @@ E:\zz\github\cc_project\Project\project\DAS\Example\Log4\bin\Debug\log4net.xml
 E:\zz\github\cc_project\Project\project\DAS\Example\Log4\obj\Debug\Log4.exe
 E:\zz\github\cc_project\Project\project\DAS\Example\Log4\obj\Debug\Log4.pdb
 E:\zz\github\cc_project\Project\project\DAS\Example\Log4\bin\Debug\Log4Config\log4net.config
+E:\zz\github\cc_project\Project\project\DAS\Example\Log4\obj\Debug\Log4.csprojResolveAssemblyReference.cache
