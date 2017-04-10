@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>条件与循环</title>
+    <script src="../lib/vue.js"></script>
+  </head>
+  <body>
+  <div id="div1">
+    <p v-if="seen">看到我了。</p>
+  </div>
+  <div id="div2">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+  <script type="text/javascript">
+  // 通过app.seen 修改数据值，页面元素会相应更改
+  var app=new Vue({
+    el:'#div1',
+    data:{
+      seen:true
+    }
+  });
+
+  var app2 = new Vue({
+    el: '#div2',
+    data: {
+      todos: [
+        { text: '学习 JavaScript' },
+        { text: '学习 Vue' },
+        { text: '整个牛项目' }
+      ]
+    }
+  })
+  </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/angular.js"></script>
+</head>
+<body ng-app="" ng-init="arr=[{id:11,name:'张三',o:2},{id:21,name:'李四',o:1},{id:31,name:'王五',o:3}]">
+<table>
+    <tr ng-repeat="item in arr | orderBy:'o'">
+        <td>{{$index + 1}}</td>
+        <td>{{item.id}}</td>
+        <td ng-if="$even">{{item.name}}</td>
+        <td ng-if="$odd" style="background-color: red">{{item.name}}</td>
+    </tr>
+</table>
+</body>
+</html>

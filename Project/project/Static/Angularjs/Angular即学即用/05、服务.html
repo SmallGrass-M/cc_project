@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>服务演变</title>
+  </head>
+  <body ng-controller="mainCtrl as main">
+    <div class="" ng-if="false">
+      我的天
+    </div>
+     <h1>Hello Controllers!</h1>
+     <button ng-click="main.open('first')">Open First</button>
+     <button ng-click="main.open('second')">Open Second</button>
+     <div class="" ng-switch on="main.tab">
+      <div class="" ng-switch-when="first">
+        <div class="" ng-controller="subCtrl as sub">
+          <h3>First tab</h3>
+          <ul>
+            <li ng-repeat="item in sub.list">
+              <span ng-bind="item.label"></span>
+            </li>
+          </ul>
+
+          <button ng-click="sub.add()">Add more item</button>
+        </div>
+      </div>
+
+      <div class="" ng-switch-when="second">
+        <div class="" ng-controller="subCtrl as sub">
+          <h3>Second tab</h3>
+          <ul>
+            <li ng-repeat="item in sub.list">
+              <span ng-bind="item.label"></span>
+            </li>
+          </ul>
+
+          <button ng-click="sub.add()">Add more item</button>
+        </div>
+      </div>
+     </div>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.js"></script>
+    <script type="text/javascript">
+      var myApp = angular.module('myApp',[]);
+      myApp.controller('mainCtrl',[function(){
+        this.open = function(op){
+          this.tab = op;
+        }
+      }])
+      .controller('subCtrl',[function(){
+        var self = this;
+        self.list = [
+          {id:1,label:'item 0'},
+          {id:2,label:'item 1'}
+        ];
+
+        self.add = function(){
+          self.list.push({
+            id:self.list.length+1,
+            label:'item '+self.list.length
+          })
+        }
+      }])
+    </script>
+  </body>
+</html>

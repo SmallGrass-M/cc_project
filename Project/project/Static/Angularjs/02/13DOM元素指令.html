@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/angular.js"></script>
+    <style>
+        div p:nth-child(odd){
+            font-weight: bold;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body ng-app="">
+<div>
+    <p>ng-disabled</p>
+    <p><button ng-disabled="true">提交</button></p>
+    <p>ng-show</p>
+    <p>
+        <span ng-show="true">我是可见的</span>
+        <span ng-show="false">我是不可见的</span>
+    </p>
+    <p>ng-hide</p>
+    <p>
+        <span ng-hide="false">我是可见的</span>
+        <span ng-hide="true">我是不可见的</span>
+    </p>
+</div>
+</body>
+</html>

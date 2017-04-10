@@ -1,0 +1,4 @@
+{
+  "name":"testName",
+  "main":"./lib/interface.js"
+}

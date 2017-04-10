@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/angular.js"></script>
+</head>
+<body ng-app="myApp">
+<!-- 禁用浏览器自带的验证（novalidate） -->
+<form name="myForm" novalidate="novalidate" ng-controller="cn1">
+    必填项：<input type="text" name="name" ng-model="name" required><span style="color: #ff122b;" ng-show="myForm.name.$invalid">*</span>
+    <p>是否修改：{{myForm.name.$dirty}}</p>
+    <p>是否合法：{{myForm.name.$valid}}</p>
+    <!-- 最大长度跟最小长度是一样的 -->
+    最小长度：<input type="text" name="name1" ng-model="name" ng-minlength="5" required><span style="color: #ff122b;" ng-show="myForm.name1.$invalid">*</span>
+    <p>是否修改：{{myForm.name1.$dirty}}</p>
+    <p>是否合法：{{myForm.name1.$valid}}</p>
+    正则验证邮箱：<input type="text" name="email"ng-model="ee" ng-pattern="/^\d+@126\.\w+$/"><span style="color: #ff122b;" ng-show="myForm.email.$invalid">*</span>
+    <p>是否修改：{{myForm.email.$dirty}}</p>
+    <p>是否合法：{{myForm.email.$valid}}</p>
+    h5的方式验证邮箱：<input type="email" name="mail" ng-model="mail"><span style="color: #ff122b;" ng-show="myForm.mail.$invalid">*</span>
+    <p>是否修改：{{myForm.mail.$dirty}}</p>
+    <p>是否合法：{{myForm.mail.$valid}}</p>
+    h5的方式验证url：<input type="url" name="url" ng-model="url"><span style="color: #ff122b;" ng-show="myForm.url.$invalid">*</span>
+    <p>是否修改：{{myForm.url.$dirty}}</p>
+    <p>是否合法：{{myForm.url.$valid}}</p>
+    h5的方式验证数字：<input type="number" name="number" ng-model="number"><span style="color: #ff122b;" ng-show="myForm.number.$invalid">*</span>
+    <p>修改：{{myForm.number.$dirty}}</p>
+    <p>合法：{{myForm.number.$valid}}</p>
+    <p>不合法：{{myForm.number.$invalid}}</p>
+    <p>没有填写记录：{{myForm.number.$pristine}}</p>
+
+    <script>
+        var app=angular.module("myApp",[]);
+        app.controller("cn1",function($scope){
+            $scope.number=11;
+        })
+    </script>
+</form>
+</body>
+</html>

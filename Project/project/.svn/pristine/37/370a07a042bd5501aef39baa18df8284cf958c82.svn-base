@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/angular.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="con1">{{name}}</div>
+<script>
+    var app = angular.module("myApp",[]);
+    // 自定义服务
+    app.service("myService",function(){
+        this.name = "张三";
+        this.hello = function(x){
+            return "hello  " + x;
+        }
+    })
+    app.controller("con1",function($scope,$location,$http,$timeout,$interval,myService){
+        console.log($location);
+        console.log($location.absUrl()); // 每个文件都有对应的【属性】调整用加两个$，比如$$absUrl
+
+        //延时加载
+        $timeout(function(){
+            console.log("$timeout输出");
+        },1000);
+
+        // 定时器
+        var inter = $interval(function(){
+            console.log("一个属性: " + myService.name);
+            console.log("一个方法: " + myService.hello(myService.name));
+            $interval.cancel(inter);// 关闭
+        },1000);
+    })
+</script>
+</body>
+</html>
