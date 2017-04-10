@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    <!-- 如何判断一个变量是不是object,有什么弊端，如何避免 -->
+    console.log("如何判断一个变量是不是object,有什么弊端，如何避免");
+    var obj={},objj=null;
+    console.log("{}类型的" + (typeof obj === "object"));
+    console.log("null类型的" + (typeof objj === "object"));
+    //alert(Function.prototype===window.toString.__proto__);
+    //alert(Object.prototype===window.toString.__proto__.__proto__);
+    console.log("{}类型的" + toString.call(obj));
+    console.log("null类型的" + toString.call(objj));
+    <!-- ***************************************** -->
+
+    <!-- caller和callee -->
+    console.log("caller和callee");
+    function callerDemo(){
+        //alert(callerDemo.caller);  //返回引用这个函数的函数对象，如果在函数外调用，则为null
+        //alert(arguments.callee); //返回当前函数的引用
+    }
+    function handleCaller(){
+        callerDemo();
+    }
+    handleCaller();
+    <!-- ***************************************** -->
+
+    <!-- apply call bind -->
+    console.log("apply call bind");
+    function fn1(s1,s2){
+        return this.n+s1+s2;
+    }
+    var obj={n:1};
+    console.log(fn1.apply(obj,[1,1]));
+    console.log(fn1.call(obj,1,1));
+    console.log(fn1.bind(obj)(1,1));// 区别在于，bind返回的为改变this后的函数
+    <!-- ***************************************** -->
+
+    <!-- 作用域问题 -->
+    console.log("作用域问题");
+    (function(){
+        var a = b = 4;
+    })();
+    console.log(b);
+    console.log(typeof a);
+    <!-- 第二个 -->
+    var myObject = {
+        foo: "bar",
+        func: function() {
+            var self = this;
+            console.log("outer func:  this.foo = " + this.foo);
+            console.log("outer func:  self.foo = " + self.foo);
+            (function() {
+                console.log("inner func:  this.foo = " + this.foo);// 这里的this作用域是谁
+                console.log("inner func:  self.foo = " + self.foo);
+            }());
+        }
+    };
+    myObject.func();
+    <!-- ***************************************** -->
+
+    <!-- 怎样防止变量污染（自执行函数） -->
+    /*console.log("怎样防止变量污染（自执行函数）");
+    for(var i = 0; i < 5; i++) {
+        setTimeout(function() {
+            console.log(i);
+        }, 1000);
+    }
+
+    for(var i = 0; i < 5; i++) {
+        (function(i) {
+            setTimeout(function() {
+                console.log(i);
+            }, 1000);
+        })(i)
+    }
+    // 论证
+    setTimeout(function(){
+        console.log("这样");
+        var i=0;
+        (function(i){
+            i++;
+        })(i);
+        console.log("i的值"+i);
+    },1000);*/
+    <!-- ***************************************** -->
+
+    <!-- return 、 break 等中断语句注意的问题（不能换行） -->
+    console.log(" return 、 break 等中断语句注意的问题（不能换行）");
+    function foo1()
+    {
+        return {
+            bar: "hello"
+        };
+    }
+
+    function foo2()
+    {
+        return
+        {
+            bar: "hello"
+        };
+    }
+    console.log(foo1());
+    console.log(foo2());
+    <!-- ***************************************** -->
+
+    <!-- 回调函数、普通函数调用顺序 -->
+    console.log("回调函数、普通函数调用顺序");
+    (function() {
+        console.log(1);
+        setTimeout(function(){console.log(2)}, 1000);
+        setTimeout(function(){console.log(3)}, 0);
+        console.log(4);
+    })();
+    <!-- ***************************************** -->
+
+    <!-- &&永远返回第一个为false的  ||永远返回第一个为true的 -->
+    console.log(3>2&&1>1&&1==1); // 会转换成1>1=>false
+</script>
+</body>
+</html>

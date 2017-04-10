@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td><a href="javascript:;">上升</a><a href="javascript:;">下降</a></td>
+    </tr>
+    <tr>
+        <td>2222</td>
+        <td>2222</td>
+        <td><a href="javascript:;">上升</a><a href="javascript:;">下降</a></td>
+    </tr>
+    <tr>
+        <td>3333</td>
+        <td>3333</td>
+        <td><a href="javascript:;">上升</a><a href="javascript:;">下降</a></td>
+    </tr>
+    <tr>
+        <td>4444</td>
+        <td>4444</td>
+        <td><a href="javascript:;">上升</a><a href="javascript:;">下降</a></td>
+    </tr>
+</table>
+<script>
+    function cu(obj){
+        var trObj=$(obj).parent().parent();
+        trObj.prev().before(trObj);
+        cz();
+    }
+    function cd(obj){
+        var trObj=$(obj).parent().parent();
+        trObj.next().after(trObj);
+        cz();
+    }
+    function cz(){
+        $("table tr").each(function(i){
+            var aup=$(this).find("td:eq(2) a:first");
+            var adown=$(this).find("td:eq(2) a:last");
+            if(i==0){
+                //aup.unbind("click");
+                adown[0].onclick=function(){
+                    cd(this);
+                };
+            }else if(i == $("table tr").length-1){
+                aup[0].onclick=function(){
+                    cu(this);
+                };
+                //adown.unbind("click");
+            }else{
+                aup[0].onclick=function(){
+                    cu(this);
+                };
+                adown[0].onclick=function(){
+                    cd(this);
+                };
+            }
+        })
+    }
+    $(function(){
+        cz();
+    })
+</script>
+</body>
+</html>

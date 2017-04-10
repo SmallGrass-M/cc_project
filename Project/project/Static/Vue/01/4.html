@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>组件化应用构建</title>
+    <script src="../lib/vue.js"></script>
+  </head>
+  <body>
+  <div id="div1">
+    <ol>
+      <todo-item></todo-item>
+    </ol>
+  </div>
+
+  <div id="div2">
+    <ol>
+      <ll></ll>
+    </ol>
+  </div>
+
+  <div id="div3">
+    <ol>
+      <!-- 现在我们为每个todo-item提供待办项对象    -->
+      <!-- 待办项对象是变量，即其内容可以是动态的 -->
+      <todo-item v-for="item in groceryList" v-bind:tt="item"></todo-item>
+    </ol>
+  </div>
+
+  <div id="div4">
+    <!-- ：为v-bind的缩写 -->
+    <my :message='message'></my>
+  </div>
+  <template id="tt1">
+    <div class="">
+      这是一个复杂的模板{{ message }}
+    </div>
+  </template>
+
+  <script type="text/javascript">
+    <!-- 全局注册 -->
+    Vue.component('ll',{
+      template:'<li>这是一个全局组件</li>'
+    });
+    <!-- 局部注册 -->
+    var app=new Vue({
+      el:'#div1',
+      components:{
+        'todo-item':{
+          template:'<li>这是一个待办项</li>'
+        }
+      }
+    });
+    <!-- 声明vue实例渲染DOM,全局组件在任意实例都可用。 -->
+    var app2=new Vue({
+      el:'#div2'
+    })
+    <!-- 组件传参(同全局) -->
+    var app3=new Vue({
+      el: '#div3',
+      data: {
+        groceryList: [
+          { text: '蔬菜' },
+          { text: '奶酪' },
+          { text: '随便其他什么人吃的东西' }
+        ]
+      },
+      components:{
+        'todo-item':{
+          props:['tt'],
+          template:'<li>{{tt.text}}</li>'
+        }
+      }
+    });
+    <!-- 复杂的组件模板 -->
+    var app4=new Vue({
+      el:'#div4',
+      data:{
+        message:'1111'
+      },
+      components:{
+        'my':{
+          props:['message'],
+          template:'#tt1'
+        }
+      }
+    });
+  </script>
+  </body>
+</html>

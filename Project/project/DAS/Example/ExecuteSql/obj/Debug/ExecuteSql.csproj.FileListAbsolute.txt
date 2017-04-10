@@ -1,0 +1,13 @@
+E:\zz\Project\project\DAS\Example\ExecuteSql\bin\Debug\ExecuteSql.exe.config
+E:\zz\Project\project\DAS\Example\ExecuteSql\bin\Debug\ExecuteSql.exe
+E:\zz\Project\project\DAS\Example\ExecuteSql\bin\Debug\ExecuteSql.pdb
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\MainWindow.g.cs
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\App.g.cs
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql_MarkupCompile.cache
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql_MarkupCompile.lref
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\MainWindow.baml
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql.g.resources
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql.Properties.Resources.resources
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql.csproj.GenerateResource.Cache
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql.exe
+E:\zz\Project\project\DAS\Example\ExecuteSql\obj\Debug\ExecuteSql.pdb

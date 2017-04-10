@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="bootbox.min.js"></script>
+    <script src="my97datepicker/WdatePicker.js"></script>
+    <script>
+        $(function(){
+            /*bootbox.alert({
+                message: "This is an alert with a callback!",
+                text:'大',
+                callback: function () {
+                    alert(1)
+                }
+            })*/
+            /*bootbox.confirm({
+                message: "This is a confirm with custom button text and color! Do you like it?",
+                buttons: {
+                    confirm: {
+                        label: '提交',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: '取消',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    if(result){
+                        alert("提交")
+                    }else{
+                        alert("取消")
+                    }
+                }
+            });*/
+
+            var data={
+                name:'root',child:
+                        [
+                            {id:1,name:'1',child:
+                                    [
+                                        {id:11,name:'11'}
+                                    ]
+                            },
+                            {id:2,name:'2'}
+                        ]
+            }
+
+            getArr(data);
+            console.log(html);
+
+            var json={};
+            $("input,select,textarea").each(function(){
+                var p = $(this).attr("name") || $(this).attr("id");
+                json[p] = $(this).val();
+            })
+            console.log(json);
+        })
+        var html="";
+        function getArr(obj){
+            html+=obj.name+"||";
+            if(obj.child){
+                for(var i=0;i<obj.child.length;i++){
+                    getArr(obj.child[i]);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<!--<input type="text" onclick="WdatePicker({maxDate:'%y-%M-%d'})">-->
+<input type="text" id="dd" value="11">
+<input type="text" name="aa" value="22">
+<select id="cc">
+    <option value="国内">国内</option>
+    <option value="国外" selected>国外</option>
+</select>
+<textarea id="bb">12312</textarea>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+<div id="ttt"></div>
+<script>
+    $("input:checkbox").change(function(){
+        var flag = $(this).prop("checked");
+        if(flag){
+            $("input:checkbox").not(this).prop("checked",false);
+        }
+    });
+    $(function(){
+        $.getJSON("tt.json?d="+new Date().getTime(),function(res){
+            console.log(res);
+        });
+
+        $("#ttt").load("1.html",function(){alert(111)});
+    })
+</script>
+</body>
+</html>

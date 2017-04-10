@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>数据重复处理</title>
+  </head>
+  <body ng-app="myApp" ng-controller="main as m">
+    <div ng-repeat="(key , value) in m.nodes track by key">
+      <span ng-bind="value"></span>
+    </div>
+
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.js"></script>
+    <script type="text/javascript">
+      angular.module('myApp',[])
+        .controller('main',[function(){
+          this.nodes=[
+            "1","1","2","2","3"
+          ];
+        }]);
+    </script>
+  </body>
+</html>

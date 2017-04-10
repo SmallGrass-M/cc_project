@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/angular.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="con1">
+<!-- 示例1-->
+<select ng-model="selectedSite">
+    <option ng-repeat="x in arr" value="{{x}}">{{x}}</option>
+</select>
+<div>{{selectedSite}}</div>
+<!-- 示例1-->
+
+<!-- 示例2-->
+<select ng-model="selectedSite2">
+    <option ng-repeat="x in sites" value="{{x.url}}">{{x.site}}</option>
+</select>
+<div>{{selectedSite2}}</div>
+<!-- 示例2-->
+
+<!-- 示例3-->
+<!-- 区别之处在于这种方式，在选中之后，模型的值为对象，可以获取对象中所有的属性值-->
+<select ng-model="selectedSite3" ng-options="x.site for x in sites">
+</select>
+<div>{{selectedSite3}}</div>
+<!-- 示例3-->
+
+<!-- 示例4-->
+<select ng-model="selectedSite4" ng-options="k for (k,v) in cars">
+</select>
+<div>{{selectedSite4}}</div>
+<!-- 示例4-->
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("con1",function($scope){
+        // 直接字符串
+        $scope.arr = ["google","baidu","soho"];
+
+        // 数组对象
+        $scope.sites = [
+            {site : "Google", url : "http://www.google.com"},
+            {site : "Runoob", url : "http://www.runoob.com"},
+            {site : "Taobao", url : "http://www.taobao.com"}
+        ];
+
+        // 直接是对象
+        $scope.cars = {
+            car01 : {brand : "Ford", model : "Mustang", color : "red"},
+            car02 : {brand : "Fiat", model : "500", color : "white"},
+            car03 : {brand : "Volvo", model : "XC90", color : "black"}
+        };
+    });
+</script>
+</body>
+</html>
