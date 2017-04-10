@@ -7,3 +7,12 @@ E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.csproj.GenerateResource.Cach
 E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.exe
 E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.pdb
 E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.MD5.resources
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\bin\Debug\MD5.exe.config
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\bin\Debug\MD5.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\bin\Debug\MD5.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.csprojResolveAssemblyReference.cache
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.MD5.resources
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.Properties.Resources.resources
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.csproj.GenerateResource.Cache
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\MD5\obj\Debug\MD5.pdb

@@ -4,3 +4,9 @@ E:\zz\Project\project\DAS\Example\Reflection\bin\Debug\Reflection.pdb
 E:\zz\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.csprojResolveAssemblyReference.cache
 E:\zz\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.exe
 E:\zz\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\bin\Debug\Reflection.exe.config
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\bin\Debug\Reflection.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\bin\Debug\Reflection.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.csprojResolveAssemblyReference.cache
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\Reflection\obj\Debug\Reflection.pdb

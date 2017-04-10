@@ -7,3 +7,12 @@ E:\zz\Project\project\DAS\Example\NOPI\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\zz\Project\project\DAS\Example\NOPI\bin\Debug\NPOI.xml
 E:\zz\Project\project\DAS\Example\NOPI\obj\Debug\NOPI.exe
 E:\zz\Project\project\DAS\Example\NOPI\obj\Debug\NOPI.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\NOPI.exe.config
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\NOPI.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\NOPI.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\NPOI.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\bin\Debug\NPOI.xml
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\obj\Debug\NOPI.csprojResolveAssemblyReference.cache
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\obj\Debug\NOPI.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\NOPI\obj\Debug\NOPI.pdb
