@@ -1,4 +1,4 @@
-﻿从 nuget 安装 log4
+﻿** 从 nuget 安装 log4
 
 layout节点的配置说明：
         %m(message):输出的日志消息；
