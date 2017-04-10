@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function parentObj(){
+
+    }
+    parentObj.prototype.per={
+        name:'xxx',
+        age:0
+    };
+    var p =new parentObj();
+    p.per={name:'张三'};
+    // p.per.name='张三';
+    console.log( parentObj.prototype.per.name);
+</script>
+</body>
+</html>

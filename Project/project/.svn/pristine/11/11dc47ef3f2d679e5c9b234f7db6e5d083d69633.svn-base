@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function format(s,frt)
+        {
+            window.add0=function(m){return m<10?'0'+m:m }
+            var frt=frt || "yyyy-MM-dd";
+
+            var time = new Date(s);
+            var y = time.getFullYear();
+            var m = time.getMonth()+1;
+            var d = time.getDate();
+            var h = time.getHours();
+            var mm = time.getMinutes();
+            var s = time.getSeconds();
+            return frt.replace("yyyy",y).replace("MM",add0(m)).replace("dd",add0(d)).replace("hh",add0(h)).replace("mm",add0(mm)).replace("ss",add0(s));
+
+        }
+        console.log(format(1476669895902))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

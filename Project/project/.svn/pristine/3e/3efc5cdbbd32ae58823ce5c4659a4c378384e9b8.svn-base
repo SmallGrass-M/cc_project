@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <form action="/login" method="post" enctype="multipart/form-data">
+          这是首页。
+          <input type="text" name="name" value="123">
+          <input type="file" name="ff">
+          <input type="submit" value="提交">
+      </form>
+  </body>
+</html>
