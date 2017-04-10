@@ -1,9 +1,0 @@
-E:\zz\Project\project\DAS\Example\MD5\bin\Debug\MD5.exe.config
-E:\zz\Project\project\DAS\Example\MD5\bin\Debug\MD5.exe
-E:\zz\Project\project\DAS\Example\MD5\bin\Debug\MD5.pdb
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.csprojResolveAssemblyReference.cache
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.Properties.Resources.resources
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.csproj.GenerateResource.Cache
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.exe
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.pdb
-E:\zz\Project\project\DAS\Example\MD5\obj\Debug\MD5.MD5.resources
