@@ -1,0 +1,5 @@
+E:\zz\github\cc_project\Project\project\DAS\Example\Utils\bin\Debug\Project.Utils.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\Utils\bin\Debug\Project.Utils.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+E:\zz\github\cc_project\Project\project\DAS\Example\Utils\obj\Debug\Project.Utils.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\Utils\obj\Debug\Project.Utils.pdb
