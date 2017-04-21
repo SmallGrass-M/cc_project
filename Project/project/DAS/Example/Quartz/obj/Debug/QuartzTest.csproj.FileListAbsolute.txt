@@ -1,0 +1,15 @@
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\QuartzTest.exe.config
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\QuartzTest.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\QuartzTest.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.Core.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Quartz.dll
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.xml
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.Core.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Common.Logging.Core.xml
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Quartz.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Quartz.xml
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\obj\Debug\QuartzTest.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\obj\Debug\QuartzTest.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\Quartz\bin\Debug\Config\quartz_jobs.xml

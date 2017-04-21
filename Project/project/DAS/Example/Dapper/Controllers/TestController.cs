@@ -24,8 +24,18 @@ namespace DapperTest.Controllers
         {
             using (IDbConnection conn = OpenConnection())
             {
-                const string query = "select * from ColumnCat order by id desc";
-                return conn.Query<ColumnCat>(query, null);
+                //const string query = "select * from ColumnCat where id in @ids order by id desc";
+                //return conn.Query<ColumnCat>(query, new { ids = new int[] { 1, 2 } });
+
+                //const string query = "select * from ColumnCat where id in @ids order by id desc";
+                //DynamicParameters param = new DynamicParameters();
+                //param.Add("ids", new int[] { 1, 2 });
+                //return conn.Query<ColumnCat>(query, param);
+
+                const string query = "select * from ColumnCat where Name in @names order by id desc";
+                DynamicParameters param = new DynamicParameters();
+                param.Add("names", new string[] { "小明", "小红" });
+                return conn.Query<ColumnCat>(query, param);
             }
         }
         public IEnumerable<ColumnCat> SelectMuch()
@@ -41,7 +51,7 @@ namespace DapperTest.Controllers
         // GET: Test
         public ActionResult Index()
         {
-            return View(SelectMuch().ToList());
+            return View(Select().ToList());
         }
     }
 }

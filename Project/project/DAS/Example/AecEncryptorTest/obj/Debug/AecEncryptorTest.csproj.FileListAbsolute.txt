@@ -1,0 +1,6 @@
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\bin\Debug\AecEncryptorTest.exe.config
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\bin\Debug\AecEncryptorTest.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\bin\Debug\AecEncryptorTest.pdb
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\obj\Debug\AecEncryptorTest.csprojResolveAssemblyReference.cache
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\obj\Debug\AecEncryptorTest.exe
+E:\zz\github\cc_project\Project\project\DAS\Example\AecEncryptorTest\obj\Debug\AecEncryptorTest.pdb
