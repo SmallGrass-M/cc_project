@@ -1,0 +1,4 @@
+E:\zz\github\cc_project\Project\project\DAS\Code\Dapper\bin\Debug\Dapper.dll
+E:\zz\github\cc_project\Project\project\DAS\Code\Dapper\bin\Debug\Dapper.pdb
+E:\zz\github\cc_project\Project\project\DAS\Code\Dapper\obj\Debug\Dapper.dll
+E:\zz\github\cc_project\Project\project\DAS\Code\Dapper\obj\Debug\Dapper.pdb
